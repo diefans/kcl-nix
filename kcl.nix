@@ -7,14 +7,14 @@ let
 
 in pkgs.buildGoModule rec {
 	pname = "kcl";
-	version = "0.8.4";
-	vendorHash = "sha256-eLJDu2YbyYXYlUSZ6zS6+N/ApLksfwh9YHMhoVYQf2E=";
+	version = "0.8.5";
+	vendorHash = "sha256-jmqKMB85HxAlwH7FVjHrLCZQYuAJrguRfzIz1yMypjw=";
 
 	src = pkgs.fetchFromGitHub {
 		owner = "kcl-lang";
 		repo = "cli";
 		rev = "v${version}";
-		hash = "sha256-17b+Bw18XVkcSTeuZZyCAUWEAr/d1HwKBO7iHzRiNTE=";
+		hash = "sha256-ZjEMgQukhBGY3LWqsGmLj3lKfLtNNaQugQs0cSLMb80=";
 	};
 
 	subPackages = [ "cmd/kcl" ];
